@@ -1,0 +1,54 @@
+{
+  "name": "p2sr",
+  "version": "0.0.0",
+  "description": "On-screen graphics for Portal 2 Speedruns events",
+  "homepage": "https://twitch.tv/portal2speedruns",
+  "author": {
+    "name": "Jaio",
+    "email": "jaio0701@gmail.com",
+    "url": "https://github.com/jaiocg"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "dashboardPanels": [
+      {
+        "name": "commentary-control",
+        "title": "Commentary Control",
+        "width": 3,
+        "file": "commentary-control.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "race-2p.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "MIT"
+}
