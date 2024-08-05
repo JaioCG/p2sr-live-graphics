@@ -1,0 +1,130 @@
+/* Colors and Fonts */
+:root {
+    --light: #F2FBFF;
+    --dark: #000F22;
+    --blue: #00ADEF;
+    --orange: #FF6803;
+    --green: #00D111;
+    --red: #E10000;
+}
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+
+/* Background Image */
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Player Containers and Content */
+.player-container {
+    width: 948px;
+    height: 75px;
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.player-name {
+    height: 75px;
+    line-height: 75px;
+
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--light);
+}
+.player-delta {
+    height: 75px;
+    line-height: 75px;
+
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: var(--light);
+}
+
+/* Info Containers and Content */
+.info-container {
+    width: 408px;
+    height: 308px;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.info-title {
+    width: 408px;
+    height: 48px;
+    line-height: 48px;
+
+    font-family: Oswald;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--light);
+}
+.commentary-content {
+    width: 408px;
+    height: 86px;
+    line-height: 86px;
+
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: var(--dark);
+}
+.stats-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+}
+.stats-title {
+    height: 43px;
+    line-height: 43px;
+
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark);
+}
+.stats-content {
+    height: 43px;
+    line-height: 43px;
+
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--dark);
+
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.grid1 { grid-area: 1 / 1 / 2 / 3; }
+.grid2 { grid-area: 1 / 3 / 2 / 5; }
+.grid3 { grid-area: 2 / 2 / 3 / 4; }
+.grid4 { grid-area: 2 / 1 / 3 / 3; }
+.grid5 { grid-area: 2 / 3 / 3 / 5; }
+.grid6 { grid-area: 3 / 2 / 4 / 4; }
+.grid7 { grid-area: 3 / 1 / 4 / 3; }
+.grid8 { grid-area: 3 / 3 / 4 / 5; }
+.grid9 { grid-area: 4 / 2 / 5 / 4; }
+.grid10 { grid-area: 4 / 1 / 5 / 3; }
+.grid11 { grid-area: 4 / 3 / 5 / 5; }
+.grid12 { grid-area: 5 / 2 / 6 / 4; }
+.grid13 { grid-area: 5 / 1 / 6 / 3; }
+.grid14 { grid-area: 5 / 3 / 6 / 5; }
+.grid15 { grid-area: 6 / 2 / 7 / 4; }
+.grid16 { grid-area: 6 / 1 / 7 / 3; }
+.grid17 { grid-area: 6 / 3 / 7 / 5; }

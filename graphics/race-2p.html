@@ -2,36 +2,55 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<style>
-			body {
-				font-family: sans-serif;
-			}
-
-			.monospace {
-				font-family: monospace;
-			}
-		</style>
-		<script type="module" src="./race-2p.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
 	</head>
 	<body>
-		<p>
-			Hello, I'm one of the graphics in your bundle! I'm where you put the graphics you want to run in your
-			broadcast software!
-		</p>
+        <!-- Background Image -->
+        <img class="bg-img" src="img/race-2p.png">
 
-		<p>
-			To edit me, open "<span class="monospace">src/graphics/index.html</span>" and "<span class="monospace"
-				>src/graphics/index.js</span
-			>" in your favorite text editor or IDE.
-		</p>
+        <!-- Player Containers -->
+        <div class="player-container" style="left: 12px; top: 593px;">
+            <div class="player-name" id="player-1">{TEST PLAYER NAME}</div>
+            <div class="player-delta">{+0:00.00}</div>
+        </div>
+        <div class="player-container" style="left: 960px; top: 593px; justify-content: right;">
+            <div class="player-delta">{+0:00.00}</div>
+            <div class="player-name" id="player-2">{TEST PLAYER NAME}</div>
+        </div>
 
-		<p>You can use any libraries, frameworks, and tools you want. There are no limits.</p>
+        <!-- Commentary Container -->
+         <div class="info-container" style="left: 0px; top: 670px;">
+            <div class="info-title">Commentators</div>
+            <div class="commentary-content" id="commentary-1">{TEST COMM NAME}</div>
+            <div class="commentary-content" id="commentary-2">{TEST COMM NAME}</div>
+            <div class="commentary-content" id="commentary-3">{TEST COMM NAME}</div>
+         </div>
 
-		<p>
-			Visit <a href="https://nodecg.dev" target="_blank" rel="noopener">https://nodecg.dev</a> for full
-			documentation.
-		</p>
+        <!-- Statistics Container -->
+        <div class="info-container" style="left: 1512px; top: 670px;">
+            <div class="info-title">Statistics</div>
+            <div class="stats-parent">
+                <div class="grid1 stats-title" id="p1-name">{TEST PLAYER NAME}</div>
+                <div class="grid2 stats-title" id="p2-name">{TEST PLAYER NAME}</div>
+                <div class="grid3 stats-title">PB Time</div>
+                <div class="grid4 stats-content" id="p1-pb">{01:04:01.8}</div>
+                <div class="grid5 stats-content" id="p2-pb" style="text-align: right;">{01:04:01.8}</div>
+                <div class="grid6 stats-title">PB Delta</div>
+                <div class="grid7 stats-content" id="p1-pbdelta">{+00:11.8}</div>
+                <div class="grid8 stats-content" id="p2-pbdelta" style="text-align: right;">{+00:11.8}</div>
+                <div class="grid9 stats-title">Sum of Best</div>
+                <div class="grid10 stats-content" id="p1-sob">{01:04:01.8}</div>
+                <div class="grid11 stats-content" id="p2-sob" style="text-align: right;">{01:04:01.8}</div>
+                <div class="grid12 stats-title">BPT</div>
+                <div class="grid13 stats-content" id="p1-bpt">{01:04:01.8}</div>
+                <div class="grid14 stats-content" id="p2-bpt" style="text-align: right;">{01:04:01.8}</div>
+                <div class="grid15 stats-title">Map Timesave</div>
+                <div class="grid16 stats-content" id="p1-timesave">{00:11.8}</div>
+                <div class="grid17 stats-content" id="p2-timesave" style="text-align: right;">{00:11.8}</div>
+                </div>
+        </div>
 
-		<p>Have fun!</p>
+        <!-- JavaScript -->
+         <script src="js/manual-data.js"></script>
 	</body>
 </html>
