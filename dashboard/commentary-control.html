@@ -9,92 +9,50 @@
             :root {
                 --matter-onsurface-rgb: 255, 255, 255;
             }
-            .parent {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                grid-column-gap: 0px;
-                grid-row-gap: 6px;
+
+            .matter-textfield-filled {
+                width: 100%;
             }
-            .div1 { grid-area: 1 / 1 / 2 / 3; }
-            .div2 { grid-area: 1 / 3 / 2 / 4; }
-            .div3 { grid-area: 2 / 1 / 3 / 3; }
-            .div4 { grid-area: 2 / 3 / 3 / 4; }
-            .div5 { grid-area: 3 / 1 / 4 / 3; }
-            .div6 { grid-area: 3 / 3 / 4 / 4; }
+
+            .commentary-container {
+                display: grid;
+                grid-template-columns: 66% 33%;
+                gap: 8px 4px;
+            }
         </style>
 	</head>
 	<body>
-        <!-- Commentator Names -->
-        <div class="parent">
-            <div class="div1">
-                <label class="matter-textfield-filled">
-                    <input id="commentary-1" placeholder=" "/>
-                    <span>Commentator 1 Name</span>
-                </label>
-            </div>
-            <div class="div2">
-                <label class="matter-textfield-filled">
-                    <input id="commentary-1-pronouns" placeholder=" "/>
-                    <span>Pronouns</span>
-                </label>
-            </div>
-            <div class="div3">
-                <label class="matter-textfield-filled">
-                    <input id="commentary-2" placeholder=" "/>
-                    <span>Commentator 1 Name</span>
-                </label>
-            </div>
-            <div class="div4">
-                <label class="matter-textfield-filled">
-                    <input id="commentary-2-pronouns" placeholder=" "/>
-                    <span>Pronouns</span>
-                </label>
-            </div>
-            <div class="div5">
-                <label class="matter-textfield-filled">
-                    <input id="commentary-3" placeholder=" "/>
-                    <span>Commentator 1 Name</span>
-                </label>
-            </div>
-            <div class="div6">
-                <label class="matter-textfield-filled">
-                    <input id="commentary-3-pronouns" placeholder=" "/>
-                    <span>Pronouns</span>
-                </label>
-            </div>
+        <div class="commentary-container">
+            <label class="matter-textfield-filled">
+                <input id="comm-1-name" placeholder=" "/>
+                <span>Commentator 1 Name</span>
+            </label>
+            <label class="matter-textfield-filled">
+                <input id="comm-1-pronouns" placeholder=" "/>
+                <span>Pronouns</span>
+            </label>
+            <label class="matter-textfield-filled">
+                <input id="comm-2-name" placeholder=" "/>
+                <span>Commentator 2 Name</span>
+            </label>
+            <label class="matter-textfield-filled">
+                <input id="comm-2-pronouns" placeholder=" "/>
+                <span>Pronouns</span>
+            </label>
+            <label class="matter-textfield-filled">
+                <input id="comm-3-name" placeholder=" "/>
+                <span>Commentator 3 Name</span>
+            </label>
+            <label class="matter-textfield-filled">
+                <input id="comm-3-pronouns" placeholder=" "/>
+                <span>Pronouns</span>
+            </label>
         </div>
 
-        <!-- Submit Button -->
         <br>
-        <button class="matter-button-contained" id="submit">Submit Commentary</button>
+        <button class="matter-button-contained" id="submit-comms">Submit Commentary</button>
 
         <!-- JavaScript -->
-         <script>
-            var commentaryRep = nodecg.Replicant("commentary");
-
-            document.getElementById("submit").addEventListener("click", function() {
-                let comm1, comm2, comm3;
-
-                if (document.getElementById("commentary-1-pronouns").value == "")
-                    comm1 = document.getElementById("commentary-1").value;
-                else
-                    comm1 = document.getElementById("commentary-1").value + " (" + document.getElementById("commentary-1-pronouns").value + ")";
-
-                if (document.getElementById("commentary-2-pronouns").value == "")
-                    comm2 = document.getElementById("commentary-2").value;
-                else
-                    comm2 = document.getElementById("commentary-2").value + " (" + document.getElementById("commentary-2-pronouns").value + ")";
-
-                if (document.getElementById("commentary-3-pronouns").value == "")
-                    comm3 = document.getElementById("commentary-3").value;
-                else
-                    comm3 = document.getElementById("commentary-3").value + " (" + document.getElementById("commentary-3-pronouns").value + ")";
-                
-                let commsArr = [comm1, comm2, comm3];
-                console.log(commsArr);
-                commentaryRep.value = commsArr;
-            });
-         </script>
+         <script src="./js/commentary-control.js"></script>
 	</body>
 </html>

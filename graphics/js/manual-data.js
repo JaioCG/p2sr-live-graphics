@@ -1,14 +1,10 @@
-// Update commentary info
-var commentaryRep = nodecg.Replicant("commentary");
-commentaryRep.on("change", function(newVal) {
-    document.getElementById("commentary-1").innerHTML = newVal[0];
-    document.getElementById("commentary-2").innerHTML = newVal[1];
-    document.getElementById("commentary-3").innerHTML = newVal[2];
-});
+// Element definitions
+var comm1 = $('#commentary-1');
+var comm2 = $('#commentary-2');
+var comm3 = $('#commentary-3');
 
-// Update runner info
-var runnersRep = nodecg.Replicant("runners");
-runnersRep.on("change", function(newVal) {
-    document.getElementById("player-1").innerHTML = newVal[0];
-    document.getElementById("player-2").innerHTML = newVal[1];
+nodecg.listenFor('updateCommentary', (names) => {
+    comm1.html(names.comm1);
+    comm2.html(names.comm2);
+    comm3.html(names.comm3);
 });

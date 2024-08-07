@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="css/common.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	</head>
 	<body>
         <!-- Background Image -->
@@ -30,27 +31,28 @@
         <div class="info-container" style="left: 1512px; top: 670px;">
             <div class="info-title">Statistics</div>
             <div class="stats-parent">
-                <div class="grid1 stats-title" id="p1-name">{TEST PLAYER NAME}</div>
-                <div class="grid2 stats-title" id="p2-name">{TEST PLAYER NAME}</div>
+                <div class="grid1 stats-title" id="stats-p1-name">{TEST PLAYER NAME}</div>
+                <div class="grid2 stats-title" id="stats-p2-name">{TEST PLAYER NAME}</div>
                 <div class="grid3 stats-title">PB Time</div>
-                <div class="grid4 stats-content" id="p1-pb">{01:04:01.8}</div>
-                <div class="grid5 stats-content" id="p2-pb" style="text-align: right;">{01:04:01.8}</div>
+                <div class="grid4 stats-content" id="stats-p1-pb">{00:00:00.0}</div>
+                <div class="grid5 stats-content" id="stats-p2-pb" style="text-align: right;">{00:00:00.0}</div>
                 <div class="grid6 stats-title">PB Delta</div>
-                <div class="grid7 stats-content" id="p1-pbdelta">{+00:11.8}</div>
-                <div class="grid8 stats-content" id="p2-pbdelta" style="text-align: right;">{+00:11.8}</div>
+                <div class="grid7 stats-content" id="stats-p1-pbdelta">{+00:00.0}</div>
+                <div class="grid8 stats-content" id="stats-p2-pbdelta" style="text-align: right;">{+00:00.0}</div>
                 <div class="grid9 stats-title">Sum of Best</div>
-                <div class="grid10 stats-content" id="p1-sob">{01:04:01.8}</div>
-                <div class="grid11 stats-content" id="p2-sob" style="text-align: right;">{01:04:01.8}</div>
+                <div class="grid10 stats-content" id="stats-p1-sob">{00:00:00.0}</div>
+                <div class="grid11 stats-content" id="stats-p2-sob" style="text-align: right;">{00:00:00.0}</div>
                 <div class="grid12 stats-title">BPT</div>
-                <div class="grid13 stats-content" id="p1-bpt">{01:04:01.8}</div>
-                <div class="grid14 stats-content" id="p2-bpt" style="text-align: right;">{01:04:01.8}</div>
+                <div class="grid13 stats-content" id="stats-p1-bpt">{00:00:00.0}</div>
+                <div class="grid14 stats-content" id="stats-p2-bpt" style="text-align: right;">{00:00:00.0}</div>
                 <div class="grid15 stats-title">Map Timesave</div>
-                <div class="grid16 stats-content" id="p1-timesave">{00:11.8}</div>
-                <div class="grid17 stats-content" id="p2-timesave" style="text-align: right;">{00:11.8}</div>
+                <div class="grid16 stats-content" id="stats-p1-timesave">{00:00.0}</div>
+                <div class="grid17 stats-content" id="stats-p2-timesave" style="text-align: right;">{00:00.0}</div>
                 </div>
         </div>
 
         <!-- JavaScript -->
-         <script src="js/manual-data.js"></script>
+        <script src="js/manual-data.js"></script>
+        <script src="js/speedcontrol.js"></script>
 	</body>
 </html>

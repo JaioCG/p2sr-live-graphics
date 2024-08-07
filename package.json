@@ -22,18 +22,12 @@
         "compatibleRange": "^2.0.0",
         "dashboardPanels": [
             {
-                "name": "race-control",
-                "title": "Race Control",
-                "width": 3,
-                "file": "race-control.html",
-                "headerColor": "#525F78"
-            },
-            {
                 "name": "commentary-control",
                 "title": "Commentary Control",
                 "width": 3,
                 "file": "commentary-control.html",
-                "headerColor": "#525F78"
+                "headerColor": "#525F78",
+                "workspace": "P2SR"
             }
         ],
         "graphics": [
