@@ -31,25 +31,28 @@
             }
         ],
         "graphics": [
-        {
-            "file": "race-2p.html",
-            "width": 1920,
-            "height": 1080,
-            "singleInstance": false
-        }
+            {
+                "file": "race-2p.html",
+                "width": 1920,
+                "height": 1080,
+                "singleInstance": false
+            }
         ]
     },
     "browserslist": {
         "production": [
-        ">0.5%",
-        "not dead",
-        "not op_mini all"
+            ">0.5%",
+            "not dead",
+            "not op_mini all"
         ],
         "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
         ]
     },
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "therungg": "^1.2.2"
+    }
 }
