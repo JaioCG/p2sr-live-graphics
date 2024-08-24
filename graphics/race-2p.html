@@ -12,10 +12,10 @@
         <!-- Player Containers -->
         <div class="player-container" style="left: 12px; top: 593px;">
             <div class="player-name" id="player-1">{TEST PLAYER NAME}</div>
-            <div class="player-delta">{+0:00.00}</div>
+            <div class="player-delta" id="p1-delta">{+0:00.00}</div>
         </div>
         <div class="player-container" style="left: 960px; top: 593px; justify-content: right;">
-            <div class="player-delta">{+0:00.00}</div>
+            <div class="player-delta" id="p2-delta">{+0:00.00}</div>
             <div class="player-name" id="player-2">{TEST PLAYER NAME}</div>
         </div>
 
@@ -37,8 +37,8 @@
                 <div class="grid4 stats-content" id="stats-p1-pb">{00:00:00.0}</div>
                 <div class="grid5 stats-content" id="stats-p2-pb" style="text-align: right;">{00:00:00.0}</div>
                 <div class="grid6 stats-title">PB Delta</div>
-                <div class="grid7 stats-content" id="stats-p1-pbdelta">{+00:00.0}</div>
-                <div class="grid8 stats-content" id="stats-p2-pbdelta" style="text-align: right;">{+00:00.0}</div>
+                <div class="grid7 stats-content" id="stats-p1-delta">{+00:00.0}</div>
+                <div class="grid8 stats-content" id="stats-p2-delta" style="text-align: right;">{+00:00.0}</div>
                 <div class="grid9 stats-title">Sum of Best</div>
                 <div class="grid10 stats-content" id="stats-p1-sob">{00:00:00.0}</div>
                 <div class="grid11 stats-content" id="stats-p2-sob" style="text-align: right;">{00:00:00.0}</div>
@@ -54,5 +54,6 @@
         <!-- JavaScript -->
         <script src="js/manual-data.js"></script>
         <script src="js/speedcontrol.js"></script>
+        <script src="js/therun.js"></script>
 	</body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- https://github.com/finnhvman/matter -->
+        <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" rel="stylesheet">
+        <style>
+            :root {
+                --matter-onsurface-rgb: 255, 255, 255;
+            }
+
+            .player-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 0px;
+                padding: 0px;
+            }
+
+            .player-item {
+                border: 1px dotted #AFB3BB;
+                padding: 8px;
+            }
+        </style>
+	</head>
+	<body>
+        <span class="matter-body1" id="websocket-status">🔴 Websocket Connection OFFLINE</span><br><br>
+        <div class="player-container">
+            <div class="player-item">
+                <span class="matter-h4" id="p1-name">{Player 1}</span><br>
+                <span class="matter-body1">Twitch:</span>
+                <span class="matter-body1" id="p1-twitch">{Twitch}</span>
+
+                <br><br>
+                <span class="matter-body1">Current Split:</span>
+                <span class="matter-body1" id="p1-split">{Split}</span>
+
+                <br><br>
+                <span class="matter-body1">PB Time:</span>
+                <span class="matter-body1" id="p1-pb">{PB}</span><br>
+                <span class="matter-body1">PB Delta:</span>
+                <span class="matter-body1" id="p1-delta">{Delta}</span><br>
+                <span class="matter-body1">Sum of Best:</span>
+                <span class="matter-body1" id="p1-sob">{SOB}</span><br>
+                <span class="matter-body1">Best Possible Time:</span>
+                <span class="matter-body1" id="p1-bpt">{BPT}</span><br>
+                <span class="matter-body1">Map Timesave:</span>
+                <span class="matter-body1" id="p1-timesave">{Map Timesave}</span>
+            </div>
+            <div class="player-item">
+                <span class="matter-h4" id="p2-name">{Player 2}</span><br>
+                <span class="matter-body1">Twitch:</span>
+                <span class="matter-body1" id="p2-twitch">{Twitch}</span>
+
+                <br><br>
+                <span class="matter-body1">Current Split:</span>
+                <span class="matter-body1" id="p2-split">{Split}</span>
+
+                <br><br>
+                <span class="matter-body1">PB Time:</span>
+                <span class="matter-body1" id="p2-pb">{PB}</span><br>
+                <span class="matter-body1">PB Delta:</span>
+                <span class="matter-body1" id="p2-delta">{Delta}</span><br>
+                <span class="matter-body1">Sum of Best:</span>
+                <span class="matter-body1" id="p2-sob">{SOB}</span><br>
+                <span class="matter-body1">Best Possible Time:</span>
+                <span class="matter-body1" id="p2-bpt">{BPT}</span><br>
+                <span class="matter-body1">Map Timesave:</span>
+                <span class="matter-body1" id="p2-timesave">{Map Timesave}</span>
+            </div>
+        </div>
+
+        <br><br>
+        <button class="matter-button-contained matter-success" onclick="trggStart();">Start Websocket Server</button>
+        <button class="matter-button-contained matter-error" onclick="trggStop();">Stop Websocket Server</button>
+
+        <!-- JavaScript -->
+        <script src="./js/therun-control.js"></script>
+	</body>
+</html>

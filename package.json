@@ -28,6 +28,14 @@
                 "file": "commentary-control.html",
                 "headerColor": "#525F78",
                 "workspace": "P2SR"
+            },
+            {
+                "name": "therun-control",
+                "title": "TheRun Control",
+                "width": 4,
+                "file": "therun-control.html",
+                "headerColor": "#525F78",
+                "workspace": "P2SR"
             }
         ],
         "graphics": [

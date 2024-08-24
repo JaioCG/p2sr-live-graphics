@@ -2,10 +2,12 @@
 :root {
     --light: #F2FBFF;
     --dark: #000F22;
+    --gray: #A0A0A0;
     --blue: #00ADEF;
     --orange: #FF6803;
-    --green: #00D111;
+    --green: #00AF0B;
     --red: #E10000;
+    --gold: #D8AF1F;
 }
 @font-face {
     font-family: Oswald;
