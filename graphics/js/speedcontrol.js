@@ -20,12 +20,12 @@ $(() => {
 	function updateSceneFields(runData) {
         let p1name, p2name;
 
-        if (runData.teams[0].players[0].pronouns == '') {
+        if (runData.teams[0].players[0].pronouns == undefined) {
             p1name = runData.teams[0].players[0].name;
         } else {
             p1name = `${runData.teams[0].players[0].name} (${runData.teams[0].players[0].pronouns})`;
         }
-        if (runData.teams[1].players[0].pronouns == '') {
+        if (runData.teams[1].players[0].pronouns == undefined) {
             p2name = runData.teams[1].players[0].name;
         } else {
             p2name = `${runData.teams[1].players[0].name} (${runData.teams[1].players[0].pronouns})`;

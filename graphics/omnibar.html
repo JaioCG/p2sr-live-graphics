@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/omnibar.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+        <div class="omnibar-container">
+            <div id="content-1">
+                <span>This is the 2024 Inbounds No SLA tournament</span>
+            </div>
+            <div id="content-2">
+                <span>Current match: </span>
+                <span id="player-1" style="color: var(--blue)">X</span>
+                <span> vs. </span>
+                <span id="player-2" style="color: var(--orange)">Y</span>
+            </div>
+            <div id="content-3">
+                <span>View the full bracket/schedule: </span>
+                <span style="color: var(--blue)">!bracket</span>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="js/speedcontrol.js"></script>
+        <script>
+            // Switching the content of the omnibar
+            var divs = $('div[id^="content-"]').hide(), i = 0;
+            (function cycle() { 
+                divs.eq(i).fadeIn(1000)
+                    .delay(20000)
+                    .fadeOut(1000, cycle);
+
+                i = ++i % divs.length;
+            })();
+        </script>
+	</body>
+</html>

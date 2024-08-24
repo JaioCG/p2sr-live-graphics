@@ -1,0 +1,14 @@
+.omnibar-container {
+    width: 1920px;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    top: 980px;
+    left: 0px;
+
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: normal;
+    text-align: center;
+    color: var(--light);
+}

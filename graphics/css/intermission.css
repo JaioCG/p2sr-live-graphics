@@ -1,0 +1,11 @@
+.big-text {
+    width: 1920px;
+    height: 978px;
+    line-height: 978px;
+
+    font-family: Oswald;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark);
+}
