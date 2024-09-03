@@ -3,6 +3,7 @@ $(() => {
 	var speedcontrolBundle = 'nodecg-speedcontrol';
 	
 	// Element selectors
+    var raceText = $('#race-text');
 	var player1 = $('#player-1');
     var player2 = $('#player-2');
     var statsP1name = $('#stats-p1-name');
@@ -18,18 +19,21 @@ $(() => {
 	
 	// Sets information on screen
 	function updateSceneFields(runData) {
+        // Race Text
+        raceText.html(`${runData.category} - ${runData.game}`);
+
+        // Runner names
         let p1name, p2name;
 
-        if (runData.teams[0].players[0].pronouns == undefined) {
+        if (runData.teams[0].players[0].pronouns == undefined)
             p1name = runData.teams[0].players[0].name;
-        } else {
+        else
             p1name = `${runData.teams[0].players[0].name} (${runData.teams[0].players[0].pronouns})`;
-        }
-        if (runData.teams[1].players[0].pronouns == undefined) {
+
+        if (runData.teams[1].players[0].pronouns == undefined)
             p2name = runData.teams[1].players[0].name;
-        } else {
+        else
             p2name = `${runData.teams[1].players[0].name} (${runData.teams[1].players[0].pronouns})`;
-        }
 
 		player1.html(p1name);
         player2.html(p2name);

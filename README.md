@@ -1,6 +1,13 @@
-# p-2-sr
+# P2SR Live Graphics
 
-p-2-sr is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
-It works with NodeCG versions which satisfy this [semver](https://docs.npmjs.com/getting-started/semantic-versioning) range: `^2.0.0`
-You will need to have an appropriate version of NodeCG installed to use it.
+[NodeCG](http://nodecg.dev) package used for [Portal 2 Speedruns livestreams](https://www.twitch.tv/portal2speedruns). Feel free to use this repo as a learning tool, since its designed to be inherently simple.
 
+![Screenshot of the two player race layout](./docs/demo_race-2p.png)
+
+This bundle depends on [nodecg-speedcontrol](https://github.com/speedcontrol/nodecg-speedcontrol) for runner data.
+
+## [therun.gg](https://therun.gg/) Support
+
+A key feature of the graphics is live data, taken from therun.gg, a live updating website designed for speedrun statistics. On some of the individual layouts, a statistics box is visible showing individual runner stats, as well as a comparison of runner deltas next to their names.
+
+Currently the bundle only supports 1v1 races with two players, however if needed more comparisons can be added (primarily 1v1v1v1 for four players).
